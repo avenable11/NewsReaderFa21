@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NewsReaderFa21</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="reply_title">Entertainment News Source</string>
+    <string name="notification_channel_name">NewsReader</string>
+    <string name="new_articles_title">New NewsReader Articles</string>
+    <string name="new_articles_text">You have new articles in NewsReader</string>
+    <string name="interval_title">Check for new articles every. . .</string>
+    <string name="is_interval_title">Periodically check for new articles?</string>
+
+</resources>

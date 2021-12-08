@@ -1,0 +1,26 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ListPreference
+        app:defaultValue="nyt"
+        app:entries="@array/reply_entries"
+        app:entryValues="@array/reply_values"
+        app:key="source"
+        app:title="@string/reply_title"
+        app:useSimpleSummaryProvider="true" />
+    <PreferenceCategory android:title="Periodic Downloads">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="is_interval"
+            android:title="@string/is_interval_title" />
+        <ListPreference
+            android:defaultValue="1d"
+            android:dependency="is_interval"
+            android:entries="@array/interval_entries"
+            android:entryValues="@array/interval_values"
+            android:key="interval"
+            android:title="@string/interval_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
